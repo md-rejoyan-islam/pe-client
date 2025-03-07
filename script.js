@@ -144,7 +144,8 @@ function clearData() {
 
 // Export Fire Extinguisher database as a CSV file
 function exportCSV() {
-  window.location.href = `${serverURL}/api/v1/fe/export-csv`;
+  window.open(`${serverURL}/api/v1/fe/export-csv`, "_blank");
+  // window.location.href = `${serverURL}/api/v1/fe/export-csv`;
 }
 
 // Event listeners
